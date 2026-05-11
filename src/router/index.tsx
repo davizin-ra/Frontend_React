@@ -22,7 +22,7 @@ const routes = createBrowserRouter([
                 children: [
                     {
                         path: '/',
-                        element: <Pages.Home />,
+                        element: <Pages.LandingPage />,
                     },
                     {
                         path: '/login',
@@ -46,8 +46,8 @@ const routes = createBrowserRouter([
                 element: <PrivateRoute />,
                 children: [
                     {
-                        path: '/protegida',
-                        element: <Pages.Privada />,
+                        path: '/home',
+                        element: <Pages.Home />,
                     },
                 ],
             },

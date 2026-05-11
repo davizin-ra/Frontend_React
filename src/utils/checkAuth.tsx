@@ -33,7 +33,7 @@ export const PrivateRoute = () => {
         return <h1>Carregando...</h1>;
     }
 
-    return autenticado ? <Outlet /> : <Navigate to='/' />;
+    return autenticado ? <Outlet /> : <Navigate to='/login' />;
 };
 
 export const PublicRoute = () => {

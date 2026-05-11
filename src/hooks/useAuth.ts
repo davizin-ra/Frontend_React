@@ -31,10 +31,12 @@ export function useAuth() {
             localStorage.setItem('token', res.token)
 
             setDebug('Login realizado com sucesso');
+            return true;
         } catch (error:any){
             const message = error.response?.data?.message || 'Erro inesperado';
             setDebug(message)
             setSenha('')
+            return false;
         }
     }
 

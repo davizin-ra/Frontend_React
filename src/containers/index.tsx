@@ -1,7 +1,7 @@
-import Home from './Home'
+import LandingPage from './LandingPage'
 import Login from './auth/Login'
 import Cadastro from './auth/Cadastro'
-import  Privada from './Privada'
+import  Home from './Home'
 import ResetToken from './auth/ResetToken'
 import ResetSenha from './auth/ResetSenha'
 
@@ -11,10 +11,10 @@ const TelaErro = () => <div>Erro!!</div>
 export const Pages = {
     PaginaNe,
     TelaErro,
-    Home,
+    LandingPage,
     Login,
     Cadastro,
-    Privada,
+    Home,
     ResetToken,
     ResetSenha
 }

@@ -5,4 +5,7 @@ export const endpoints = {
         resetToken: '/tokenreset',
         resetSenha: '/reset'
     },
+    grupos: {
+        acharGrupo: '/grupo'
+    }
 };

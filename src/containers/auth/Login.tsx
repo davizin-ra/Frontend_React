@@ -1,11 +1,16 @@
 import { useAuth } from '../../hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate()
     const { email, senha, login, debug, setEmail, setSenha } = useAuth();
 
     async function enviarForms(e: React.FormEvent) {
         e.preventDefault();
-        await login();
+        const certo = await login();
+        if (certo){
+            navigate('/home')
+        }
     }
 
     return (
