@@ -6,6 +6,7 @@ export const endpoints = {
         resetSenha: '/reset'
     },
     grupos: {
-        acharGrupo: '/grupo'
+        acharGrupo: '/grupo',
+        acharMembros: '/membros'
     }
 };
