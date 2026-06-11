@@ -49,6 +49,10 @@ const routes = createBrowserRouter([
                         path: '/home',
                         element: <Pages.Home />,
                     },
+                    {
+                        path: '/palavras',
+                        element: <Pages.Palavras/>
+                    }
                 ],
             },
         ],

@@ -1,9 +1,10 @@
-import LandingPage from './LandingPage'
+import LandingPage from './landingPage'
 import Login from './auth/Login'
 import Cadastro from './auth/Cadastro'
-import  Home from './Home'
+import  Home from './home'
 import ResetToken from './auth/ResetToken'
 import ResetSenha from './auth/ResetSenha'
+import Palavras from './palavras'
 
 const PaginaNe = () => <div>404- Pagina não encontrada</div>
 const TelaErro = () => <div>Erro!!</div>
@@ -16,5 +17,6 @@ export const Pages = {
     Cadastro,
     Home,
     ResetToken,
-    ResetSenha
+    ResetSenha,
+    Palavras
 }
